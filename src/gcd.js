@@ -8,8 +8,13 @@ function gcd(a, b) {
   while (a !== 0) {
     let temp = a
     a = b % a
+    b = temp
   }
   return b
 }
 
 export default gcd
+
+
+// Note for self temp is just a variable name, short for "temporary." It's often used to store intermediate or 
+//temporary values during calculations or transformations
