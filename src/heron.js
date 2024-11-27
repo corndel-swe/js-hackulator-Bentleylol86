@@ -4,7 +4,10 @@
  * https://en.wikipedia.org/wiki/Heron%27s_formula
  */
 function heron(a, b, c) {
-  return Math.sqrt(/*🤷*/)
+  const s = (a + b + c) / 2
+  return Math.sqrt( s * (s -a) * (s - b) * (s - c) )
 }
 
 export default heron
+
+//You cant put a function for the constant for the s value as it is not a function 
